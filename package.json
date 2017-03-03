@@ -1,7 +1,7 @@
 {
   "name": "newt",
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server"
   },
   "description": "New Template for a fullstack Javscript app",
   "version": "0.9.0",

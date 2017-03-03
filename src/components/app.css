@@ -5,3 +5,24 @@
     padding: 6px 20px 30px;
     color: color(lime a(0.6));
 }
+.circle {
+  circle: 100px red;
+}
+.isoscelesTriangle {
+    triangle: pointing-right;
+    width: 50px;
+    height: 38px;
+    background-color: blue;
+}
+
+.rightIsoscelesTriangle {
+    triangle: right-iso pointing-down;
+    width: 167px;
+    background-color: goldenrod;
+}
+
+.equilateralTriangle {
+    triangle: equilateral pointing-up;
+    height: 100px;
+    background-color: lavender;
+}
