@@ -71,8 +71,17 @@ module.exports = {
       errors: true
     },
     proxy: {
-      "/api": "http://localhost:3838"
+      "/api": {
+        target: "http://localhost:3838",
+        pathRewrite: {"^/api" : ""},
+        bypass: function(req, res, proxyOptions) {
+          if (req.headers.accept.indexOf("html") !== -1) {
+            console.log("Skipping proxy for browser request.");
+            return "/index.html";
+          }
+        }
+      }
     }
-  },
+  }
 
 };
